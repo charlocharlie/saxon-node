@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+  - "12"
   - "11"
   - "10"
   - "9"
@@ -60,7 +61,7 @@ install:
   - npm install --build-from-source --saxonc_home=../Saxonica/SaxonHEC1.2.0
   - ls ./build/Release
 
-before-scripte:
+before-script:
   - export PATH=`pwd`/node_modules/.bin:${PATH}
   
 script:
